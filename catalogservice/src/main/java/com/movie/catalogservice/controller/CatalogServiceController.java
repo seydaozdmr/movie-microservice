@@ -23,14 +23,15 @@ public class CatalogServiceController {
     }
 
 
+
     @GetMapping("/{userId}")
     public List<CatalogItem> getCatalog(@PathVariable("userId") String userId){
-        RatingList ratingList=template.getForObject("http://localhost:8083/ratings/users/"+userId,RatingList.class);
+        RatingList ratingList=template.getForObject("http://rating-service/ratings/users/"+userId,RatingList.class);
 
         return ratingList.getRatingList()
                 .stream()
                 .map(rating->{
-                    Movie movie = template.getForObject("http://localhost:8082/movies/"+rating.getMovieId(),Movie.class);
+                    Movie movie = template.getForObject("http://movie-info/movies/"+rating.getMovieId(),Movie.class);
                     return new CatalogItem(movie.getName(),movie.getDescription(),rating.getRate());
                 }).collect(Collectors.toList());
     }
