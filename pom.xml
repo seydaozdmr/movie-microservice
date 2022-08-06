@@ -8,6 +8,7 @@
         <module>movieinfo</module>
         <module>ratingservice</module>
         <module>eureka-server</module>
+        <module>config</module>
     </modules>
 
     <parent>

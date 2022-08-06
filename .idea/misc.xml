@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/../movieinfo/pom.xml" />
         <option value="$PROJECT_DIR$/../ratingservice/pom.xml" />
         <option value="$PROJECT_DIR$/../eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../config/pom.xml" />
       </list>
     </option>
   </component>
