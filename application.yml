@@ -1,5 +1,5 @@
 app:
-   hello : hello world
+   hello : hello world from git
    name : Movie App
    description : This app is ${app.name}
    list : one,two,three
