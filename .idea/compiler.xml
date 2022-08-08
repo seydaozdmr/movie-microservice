@@ -10,12 +10,14 @@
         <module name="movieinfo" />
         <module name="ratingservice" />
         <module name="eureka-server" />
+        <module name="config" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="catalogservice" options="-parameters" />
+      <module name="config" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="movieinfo" options="-parameters" />
       <module name="ratingservice" options="-parameters" />

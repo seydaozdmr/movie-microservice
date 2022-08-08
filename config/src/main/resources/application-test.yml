@@ -1,0 +1,15 @@
+app:
+   hello : test world
+   name : Test App
+   description : This app is ${app.name}
+   list : one,two,test
+
+my:
+   greeting: hello test
+   counter : 1000
+server.port : 8084
+
+db:
+   connection : connection
+   host : 127.0.0.1
+   port: 1200
