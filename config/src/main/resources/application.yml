@@ -7,7 +7,9 @@ app:
 my:
    greeting: hello
    counter : 1000
-server.port : 8084
+
+
+server.port : 8888
 
 db:
    connection : "{connectionString:'asdf' ,userName:'foo',password:'pass'}"
@@ -15,4 +17,9 @@ db:
    port: 1200
 
 spring.cloud.config.server.git.uri : https://github.com/seydaozdmr/movie-microservice
-#spring.profiles.active : test
+spring:
+   cloud:
+      config:
+         server:
+            git:
+               default-label : master

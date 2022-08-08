@@ -7,7 +7,9 @@ app:
 my:
    greeting: hello test
    counter : 1000
-server.port : 8084
+
+
+server.port : 8888
 
 db:
    connection : connection
